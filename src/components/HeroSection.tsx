@@ -5,6 +5,7 @@ import profilePhoto from "@/assets/profile-photo.jpg";
 const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
+      
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 right-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
@@ -14,6 +15,7 @@ const HeroSection = () => {
 
       <div className="section-container relative z-10 w-full">
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
+
           {/* Text content */}
           <motion.div
             className="flex-1 text-center md:text-left"
@@ -21,6 +23,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
           >
+
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -46,7 +49,9 @@ const HeroSection = () => {
               the frontiers of Artificial Intelligence and Machine Learning.
             </p>
 
+            {/* Buttons */}
             <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+
               <a
                 href="#projects"
                 className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-primary-foreground gradient-bg rounded-full hover:opacity-90 transition-all hover:shadow-lg"
@@ -54,6 +59,7 @@ const HeroSection = () => {
                 <FolderOpen size={16} />
                 View Projects
               </a>
+
               <a
                 href="#contact"
                 className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold border border-border rounded-full hover:bg-secondary transition-all"
@@ -61,17 +67,22 @@ const HeroSection = () => {
                 <Mail size={16} />
                 Contact Me
               </a>
+
+              {/* Resume Button */}
               <a
-                href="#"
+                href="/resume/ResumeLoki.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold border border-border rounded-full hover:bg-secondary transition-all"
               >
                 <Download size={16} />
                 Resume
               </a>
+
             </div>
           </motion.div>
 
-          {/* Profile image */}
+          {/* Profile Image */}
           <motion.div
             className="flex-shrink-0"
             initial={{ opacity: 0, scale: 0.8 }}
@@ -79,6 +90,7 @@ const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.3 }}
           >
             <div className="relative">
+
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-background shadow-2xl relative z-10">
                 <img
                   src={profilePhoto}
@@ -86,9 +98,12 @@ const HeroSection = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
+
               <div className="absolute inset-0 rounded-full gradient-bg opacity-20 blur-2xl scale-110" />
+
             </div>
           </motion.div>
+
         </div>
 
         {/* Scroll indicator */}
@@ -99,6 +114,7 @@ const HeroSection = () => {
         >
           <ArrowDown size={20} className="text-muted-foreground" />
         </motion.div>
+
       </div>
     </section>
   );
