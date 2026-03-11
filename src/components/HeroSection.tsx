@@ -69,15 +69,15 @@ const HeroSection = () => {
               </a>
 
               {/* Resume Button */}
-              <a
+             <a
                 href="/resume/ResumeLoki.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold border border-border rounded-full hover:bg-secondary transition-all"
-              >
+            >
                 <Download size={16} />
-                Resume
-              </a>
+                 Resume
+            </a>
 
             </div>
           </motion.div>
