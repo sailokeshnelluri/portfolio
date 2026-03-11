@@ -55,19 +55,18 @@ const CertificationsSection = () => {
         {open && (
           <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
 
-            <div className="relative bg-white rounded-xl p-4 max-w-3xl w-full">
+            <div className="relative bg-white rounded-xl p-4 max-w-4xl w-full h-[80vh]">
 
               <button
                 onClick={() => setOpen(false)}
-                className="absolute top-2 right-2"
+                className="absolute top-3 right-3 z-10"
               >
                 <X size={24} />
               </button>
 
-              <img
-                src="/certificates/agentforce-cert.png"
-                alt="Certificate"
-                className="w-full rounded-lg"
+              <iframe
+                src="/certificates/Cert7239605_AgentforceSpecialist_20251220.pdf"
+                className="w-full h-full rounded-lg"
               />
 
             </div>
