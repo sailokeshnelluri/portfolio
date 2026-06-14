@@ -4,10 +4,10 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "Event Registration System",
-    description: "A web application that allows users to register and manage event participants using HTML, CSS, and JavaScript.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    color: "from-blue-500 to-cyan-400",
+  title: "CodeVision",
+  description: "AI-powered code analysis platform that helps developers understand source code, track variables, and gain intelligent insights.",
+  tags: ["React", "TypeScript", "FastAPI", "Python", "PostgreSQL", "Docker"],
+  color: "from-green-500 to-emerald-400",
   },
   {
     title: "To-Do List App",
